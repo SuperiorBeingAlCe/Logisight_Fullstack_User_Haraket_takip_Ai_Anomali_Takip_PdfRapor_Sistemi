@@ -36,6 +36,8 @@
 
 <img width="1366" height="768" alt="Ekran Görüntüsü (12)" src="https://github.com/user-attachments/assets/70a98343-9f07-4c0a-bd28-5fe4fba2a66c" />
 
+<img width="1366" height="768" alt="Ekran Görüntüsü (13)" src="https://github.com/user-attachments/assets/e839838d-0874-46a5-aff4-fd512caa0d51" />
+
 
 ---
 
