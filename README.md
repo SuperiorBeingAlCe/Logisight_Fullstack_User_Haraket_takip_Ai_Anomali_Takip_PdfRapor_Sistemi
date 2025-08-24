@@ -29,22 +29,23 @@
 
 ---
 
-## 📦 Paket Yapısı
+## 📂 Paket Yapısı
 
-aspect/ # Aspect tabanlı cross-cutting concerns
-config/ # Spring konfigürasyonları
-controller/ # RESTful API controller'ları
-dto/ # Data Transfer Object
-entity/ # Veritabanı tabloları
-init/ # Başlangıç ve seed işlemleri
-jexception/ # Custom exception ve error code'lar
-mapper/ # MapStruct mapping
-report/ # PDF ve raporlama işlemleri
-repository/ # JpaRepository
-scheduler/ # Scheduled görevler
-security/ # JWT, rol ve güvenlik konfigürasyonu
-service/ # Business logic (abstract & concrete)
-util/ # Yardımcı sınıflar ve fonksiyonlar
+Logisight/
+├── aspect/ # Aspect tabanlı cross-cutting concerns
+├── config/ # Spring konfigürasyonları
+├── controller/ # RESTful API controller'ları
+├── dto/ # Data Transfer Object
+├── entity/ # Veritabanı tabloları
+├── init/ # Başlangıç ve seed işlemleri
+├── jexception/ # Custom exception ve error code'lar
+├── mapper/ # MapStruct mapping
+├── report/ # PDF ve raporlama işlemleri
+├── repository/ # JpaRepository
+├── scheduler/ # Scheduled görevler
+├── security/ # JWT, rol ve güvenlik konfigürasyonu
+├── service/ # Business logic (abstract & concrete)
+└── util/ # Yardımcı sınıflar ve fonksiyonlar
 
 yaml
 Kopyala
@@ -71,21 +72,3 @@ Frontend: React tarafı geliştirme aşamasında
 Yapay zekâ tabanlı anomali tespiti: Planlanıyor
 
 Flyway: Kurulum aşamasında
-
-yaml
-Kopyala
-Düzenle
-
----
-
-Bu README dosyası, GitHub'un Markdown formatına uygun olarak hazırlanmıştır ve aşağıdaki özellikleri içerir:
-
-- **Başlıklar**: `#`, `##` gibi başlık etiketleriyle düzenlenmiş bölümler
-- **Listeleme**: Özellikler ve teknoloji yığını gibi bölümlerde madde işaretleri kullanılmıştır
-- **Kod Bloğu**: Paket yapısı ve kurulum komutları için kod blokları (` ``` `) kullanılmıştır
-- **Durum Güncellemeleri**: Özelliklerin gelişim durumunu göstermek için `[x]` ve `[ ]` işaretleri kullanılmıştır
-
-Bu yapı, GitHub üzerinde projenin profesyonel ve anlaşılır bir şekilde sunulmasını sağlar. Eğer README dosyanıza görseller, badge'ler veya daha fazla detay eklemek istersen, bunu da sağlayabilirim.
-
----
-::contentReference[oaicite:0]{index=0}
