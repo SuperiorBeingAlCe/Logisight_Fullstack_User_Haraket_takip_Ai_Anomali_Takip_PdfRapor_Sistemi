@@ -71,3 +71,21 @@ Frontend: React tarafı geliştirme aşamasında
 Yapay zekâ tabanlı anomali tespiti: Planlanıyor
 
 Flyway: Kurulum aşamasında
+
+yaml
+Kopyala
+Düzenle
+
+---
+
+Bu README dosyası, GitHub'un Markdown formatına uygun olarak hazırlanmıştır ve aşağıdaki özellikleri içerir:
+
+- **Başlıklar**: `#`, `##` gibi başlık etiketleriyle düzenlenmiş bölümler
+- **Listeleme**: Özellikler ve teknoloji yığını gibi bölümlerde madde işaretleri kullanılmıştır
+- **Kod Bloğu**: Paket yapısı ve kurulum komutları için kod blokları (` ``` `) kullanılmıştır
+- **Durum Güncellemeleri**: Özelliklerin gelişim durumunu göstermek için `[x]` ve `[ ]` işaretleri kullanılmıştır
+
+Bu yapı, GitHub üzerinde projenin profesyonel ve anlaşılır bir şekilde sunulmasını sağlar. Eğer README dosyanıza görseller, badge'ler veya daha fazla detay eklemek istersen, bunu da sağlayabilirim.
+
+---
+::contentReference[oaicite:0]{index=0}
