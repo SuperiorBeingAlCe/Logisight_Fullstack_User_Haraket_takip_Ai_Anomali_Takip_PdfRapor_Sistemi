@@ -26,6 +26,16 @@
 - **Raporlama**: iText ile PDF üretimi
 - **Test**: JUnit5, Mock testler
 - **Kod Prensipleri**: Clean code, RESTful API, katmanlı mimari
+---
+
+**backend Gösrselleri**
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/dac710f4-b048-466d-9187-e122479d9b03" />
+
+<img width="1366" height="768" alt="Ekran Görüntüsü (11)" src="https://github.com/user-attachments/assets/0b25ca67-4f02-4755-8e53-2f9134a1dd2f" />
+
+<img width="1366" height="768" alt="Ekran Görüntüsü (12)" src="https://github.com/user-attachments/assets/70a98343-9f07-4c0a-bd28-5fe4fba2a66c" />
+
 
 ---
 
