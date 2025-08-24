@@ -6,25 +6,26 @@
 
 ## 🚀 Özellikler
 
-- Kullanıcı hareketlerini takip ve analiz
-- Yapay zekâ tabanlı anomali tespiti (gelecekte eklenecek)
-- Scheduled ve manuel PDF rapor oluşturma (iText)
-- CRUD ve RESTful API tabanlı veri yönetimi
-- WebSocket ile gerçek zamanlı veri akışı
-- Cache kontrolü ve performans optimizasyonu
-- JWT tabanlı güvenli kimlik doğrulama ve rol hiyerarşisi
-- HTTPS uyumlu ve güvenli veri erişimi
+- [x] Kullanıcı hareketlerini takip ve analiz
+- [ ] Yapay zekâ tabanlı anomali tespiti
+- [x] Scheduled ve manuel PDF rapor oluşturma (iText)
+- [x] CRUD ve RESTful API tabanlı veri yönetimi
+- [x] WebSocket ile gerçek zamanlı veri akışı
+- [x] Cache kontrolü ve performans optimizasyonu
+- [x] JWT tabanlı güvenli kimlik doğrulama ve rol hiyerarşisi
+- [x] HTTPS uyumlu ve güvenli veri erişimi
 
 ---
 
 ## 🛠 Teknoloji Yığını
 
-- **Backend:** Java, Spring Boot, Spring Security, Spring AI (gelecekte)
-- **Veritabanı:** PostgreSQL (DBeaver üzerinden yönetildi)
-- **Frontend:** React, JavaScript (geliştirme aşamasında)
-- **Raporlama:** iText ile PDF oluşturma, scheduled ve manuel
-- **Testler:** JUnit5 ve Mock testleri
-- **Kod Yapısı:** CRUD, RESTful API, clean code prensipleri
+- [x] Backend: Java, Spring Boot, Spring Security
+- [ ] Spring AI (gelecekte)
+- [x] Veritabanı: PostgreSQL (DBeaver üzerinden yönetildi)
+- [ ] Frontend: React, JavaScript (geliştirme aşamasında)
+- [x] Raporlama: iText ile PDF oluşturma, scheduled ve manuel
+- [x] Testler: JUnit5 ve Mock testleri
+- [x] Kod Yapısı: CRUD, RESTful API, clean code prensipleri
 
 ---
 
