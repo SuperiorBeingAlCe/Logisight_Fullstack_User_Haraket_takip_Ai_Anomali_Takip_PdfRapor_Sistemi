@@ -2,40 +2,35 @@ server:
   port: 8080
   ssl:
     enabled: true
-    key-store: classpath:keystore.p12
-    key-store-password: password123
+    key-store: classpath:spring-https.p12
+    key-store-password: changeit
     key-store-type: PKCS12
-    key-alias: your-key-alias
-  error:
-    include-message: always
+    key-alias: server
 
 spring:
   profiles:
     active: default
   application:
     name: Logisight
+  flyway:
+    enabled: false
   autoconfigure:
     exclude:
       - org.springframework.ai.vectorstore.redis.autoconfigure.RedisVectorStoreAutoConfiguration
-      
   datasource:
     url: jdbc:postgresql://localhost:5058/argusdb
     username: postgres
     password: 12345
     driver-class-name: org.postgresql.Driver
-
   jpa:
     hibernate:
-      ddl-auto: create
-    show-sql: true 
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
         default_schema: public
-
- 
-
   main:
     allow-circular-references: true
 
@@ -50,14 +45,13 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: trace
     org.springframework.security: DEBUG
 
-
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
   api-docs:
     path: /v3/api-docs
-    
-    management:
+
+management:
   endpoints:
     web:
       exposure:
