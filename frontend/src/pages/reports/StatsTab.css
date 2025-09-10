@@ -1,0 +1,57 @@
+.stats-tab {
+  text-align: center;
+  padding: 15px;
+  font-family: "Arial", sans-serif;
+}
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 150px); /* 2 sütun, sabit genişlik */
+  grid-auto-rows: minmax(80px, auto); /* kutuların yüksekliği içerik ile uyumlu */
+  gap: 15px; /* kutular arası boşluk */
+  justify-content: start; /* grid sola hizalı */
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #f9f9f9; /* biraz daha açık ve gözü yormayan */
+  padding: 12px 10px; /* dikey ve yatay padding daha dengeli */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* içeriği ortala */
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.card p {
+  margin-top: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 20px auto;
+}
+
+.period-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}

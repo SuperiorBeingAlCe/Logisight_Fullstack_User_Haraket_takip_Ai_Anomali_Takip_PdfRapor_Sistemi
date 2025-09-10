@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #0f0f0f;       /* sidebar arka plan */
+  --secondary-color: #4a90e2;     /* vurgulu mavi */
+  --text-color: #d0d0d0;          /* metin rengi */
+  --hover-bg: #1f2a38;            /* hover arka plan */
+  --active-bg: #3b5998;           /* aktif link */
+  --icon-color: #dcdcdc;          /* ikon rengi */
+}
+
+/* Sidebar container */
+.sidebar {
+  width: 60px;  /* ilk başta sadece ikonlar */
+  background-color: #0f0f0f;
+  color: #bdbaba;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 10px rgba(187, 76, 76, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 100;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 250px;  /* hover olunca büyüsün */
+}
+
+/* Logo / header */
+.sidebar-header {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #0d0d0f;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #b7b7be;
+  white-space: nowrap; /* taşma olmasın */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-header {
+  opacity: 1; /* hover olunca görünsün */
+}
+
+/* Menü */
+.sidebar-menu {
+  flex: 1;
+  padding-top: 20px;
+}
+
+/* Menü linkleri */
+.menu-link {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  color: #b7b7be;
+  text-decoration: none;
+  font-size: 16px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 0 8px 8px 0;
+  white-space: nowrap;
+  justify-content: center;  /* dar görünümde ikon ortalansın */
+}
+
+.sidebar:hover .menu-link {
+  justify-content: flex-start; /* genişleyince sola yaslansın */
+  padding: 14px 20px;
+}
+
+.menu-link:hover {
+  background-color: var(--hover-bg);
+  border-left: 4px solid var(--secondary-color);
+}
+
+.menu-link.active {
+  background-color: var(--active-bg);
+  border-left: 4px solid var(--secondary-color);
+  font-weight: 600;
+}
+/* İkonlar */
+.menu-icon {
+  font-size: 20px;
+  color: #ffecec;
+  min-width: 24px;
+}
+
+/* Yazılar */
+.menu-link span {
+  display: none;  /* dar görünümde tamamen gizle */
+  margin-left: 10px;
+}
+
+.sidebar:hover .menu-link span {
+  display: inline;  /* hover olunca göster */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    position: absolute;
+    left: -60px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}

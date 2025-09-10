@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #003366; /* koyu kurumsal mavi */
+  --secondary-color: #007bff; /* canlı mavi */
+  --accent-color: #f39c12; /* vurgu için turuncu */
+  --bg-color: #f4f6f9; /* daha yumuşak gri */
+  --text-color: #2c3e50; /* koyu gri */
+  --card-bg: #ffffff;
+  --border-color: #dcdcdc;
+  --radius: 8px;
+  --transition: 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 40px 30px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.login-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+  z-index: 1000;
+  font-size: 15px;
+}
+
+.banner-actions {
+  display: flex;
+   flex: 1;
+   justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-banner button {
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.login-banner button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+button {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+button:hover {
+  background: var(--secondary-color);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border var(--transition), box-shadow var(--transition);
+}
+
+input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 6px rgba(0,123,255,0.4);
+  outline: none;
+}
+
+.dashboard-layout {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+  .card {
+    padding: 30px 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}

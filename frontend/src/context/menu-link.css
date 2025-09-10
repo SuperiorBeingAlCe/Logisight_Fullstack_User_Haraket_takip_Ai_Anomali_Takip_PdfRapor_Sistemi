@@ -1,0 +1,17 @@
+.menu-link {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+  transition: 0.3s;
+}
+.menu-link:hover {
+  background: #0e6ead;
+  border-left: 4px solid #007bff;
+}
+.active {
+  background: #861313;
+  border-left: 4px solid #007bff;
+}
